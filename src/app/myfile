@@ -1,0 +1,41 @@
+/*export default function Navbar(){
+    return(
+        <div className="bg-blue-950 w-[1322px] h-[] ">
+
+            
+            <nav className="flex items-center justify-between gap-[21px] opacity-100 mt-[0px] px-4">
+
+          
+          <h3 className="font-montserrat text-[24px] font-bold leading-[32px] tracking-[0.1px] text-left w-[152px] h-[32px] 
+          mt-[13px] gap-0 opacity-100 text-white">
+                BrandName</h3>
+
+
+        
+        <ul className="flex gap-[21px]">
+            <li className="text-[24px] leading-[24px]"><Link href = "/" className="font-montserrat text-[14px] font-bold leading-[24px] tracking-[0.2px] text-center text-white opacity-100 p-2 block">Home</Link></li>
+            <li className="text-[24px] leading-[24px]"><Link href = "/" className="font-montserrat text-[14px] font-bold leading-[24px] tracking-[0.2px] text-center text-white opacity-100 p-2 block">Product</Link></li>
+            <li className="text-[24px] leading-[24px]"><Link href = "/" className="font-montserrat text-[14px] font-bold leading-[24px] tracking-[0.2px] text-center text-white opacity-100 p-2 block">Pricing</Link></li>
+            <li className="text-[24px] leading-[24px]"><Link href = "/" className="font-montserrat text-[14px] font-bold leading-[24px] tracking-[0.2px] text-center text-white opacity-100 p-2 block">Contact</Link></li>
+        </ul>
+
+
+<div className=" flex w-[189px] h-[52px] top-3px left-[626px] gap-[45px]">
+          
+          <button className="w-[41px] h-[22px] text-[14px] font-bold leading-[22px] tracking-[0.2px] text-right text-white opacity-100">
+            Login
+          </button>
+
+        
+          <button className="w-[60px] h-[22px] text-[14px] font-bold leading-[22px] tracking-[0.2em] text-left text-white rounded bg-blue-500 pt-[15px]
+ pr-[25px] pb-[15px] pl-[25px] opacity-100">
+            JOIN US
+          </button>
+        </div>
+
+
+
+      </nav>
+        </div>
+
+    )}*/

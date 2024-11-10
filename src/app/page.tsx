@@ -1,101 +1,97 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function MyHome() {
+    return (
+        
+        <div className="bg-blue-950 min-h-screen flex flex-col items-center pt-[80px] pb-[80px] gap-[80px] ">
+        
+
+            {/* Main Container */}
+            <div className="flex flex-col items-center w-[1046px] h-[1028px] pt-[40px] pb-[40px] gap-[40px]">
+                
+                {/* Row */}
+                <div className="flex flex-col items-center w-[701px] h-[496px]">
+                    
+                    {/* Main Content */}
+                    <div className="flex flex-col items-center py-[40px] gap-[40px] w-[699px] h-[496px]">
+                        
+                        {/* Header Text */}
+                        <h5 className="text-[#23A6F0] mt-[40px] mb-[40px] font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px] w-[77px] h-[24px] text-center">
+                            Welcome
+                        </h5>
+
+                        {/* Headline */}
+                        <h1 className="text-white font-montserrat font-bold text-[58px] leading-[80px] tracking-[0.2px] text-center w-[542px] h-[160px]">
+                            Selling on the internet like a pro
+                        </h1>
+
+                        {/* Sub-headline */}
+                        <h4 className="text-white font-montserrat text-[20px] font-normal leading-[30px] tracking-[0.2px] text-center w-[536px] h-[60px]">
+                        We know how large objects will act, but things on a small scale just do not act that way.
+                        </h4>
+
+                        {/* CTA Buttons */}
+                        <div className="flex gap-[10px] w-[365px] h-[52px] ">
+                            {/* Primary CTA Button */}
+                            <button className="bg-[#23A6F0] text-white font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] py-[15px] px-[40px] rounded-[5px] w-[193px] h-[52px]">
+                            Get Quote Now
+                            </button>
+
+                            {/* Secondary CTA Button */}
+                            <button className="border border-[#23A6F0] text-[#23A6F0] font-montserrat font-bold text-[14px] leading-[22px] tracking-[0.2px] py-[15px] px-[40px] rounded-[5px] w-[162px] h-[52px]">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Features Section */}
+                <div className="flex flex-row items-center gap-[30px] w-[1046px] h-[292px] mt-28 ">
+                    
+                    {/* Feature Card 1 */}
+                    <div className="flex flex-col items-start bg-white shadow-md p-[35px_40px] gap-[20px] w-[328px] h-[292px]">
+                        <div className="flex flex-col items-center bg-[#FFDCD1] w-[70px] h-[76px] rounded-[10px] justify-center py-[19px] px-[22px]">
+                            {/* No icon here, just the styled box */}
+                        </div>
+                        <h3 className="text-[#252B42] font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px]">
+                        training Courses
+                        </h3>
+                        <div className="bg-[#E74040] w-[50px] h-[2px]"></div>
+                        <p className="text-[#737373] font-montserrat text-[14px] leading-[20px] tracking-[0.2px]">
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                        </p>
+                    </div>
+
+                    {/* Feature Card 2 */}
+                    <div className="flex flex-col items-start bg-white shadow-md p-[35px_40px] gap-[20px] w-[328px] h-[292px]">
+                        <div className="flex flex-col items-center bg-[#B9EAA8] w-[70px] h-[76px] rounded-[10px] justify-center">
+                            {/* No icon here, just the styled box */}
+                        </div>
+                        <h3 className="text-[#252B42] font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px]">
+                        2,769 online courses
+                        </h3>
+                        <div className="bg-[#E74040] w-[50px] h-[2px]"></div>
+                        <p className="text-[#737373] font-montserrat text-[14px] leading-[20px] tracking-[0.2px]">
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                        </p>
+                    </div>
+
+                    {/* Feature Card 3 */}
+                    <div className="flex flex-col items-start bg-[#23A6F0] shadow-md p-[35px_40px] gap-[20px] w-[328px] h-[292px]">
+                        <div className="flex flex-col items-center bg-white w-[70px] h-[76px] rounded-[10px] justify-center">
+                            {/* No icon here, just the styled box */}
+                        </div>
+                        <h3 className="text-white font-montserrat font-bold text-[16px] leading-[24px] tracking-[0.1px]">
+                        training Courses
+                        </h3>
+                        <div className="bg-white w-[50px] h-[2px]"></div>
+                        <p className="text-white font-montserrat text-[14px] leading-[20px] tracking-[0.2px]">
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
